@@ -7,6 +7,6 @@ urlpatterns = [
     path('show/', LaptopListView.as_view(), name='show'),
     path('update/<int:pk>', LaptopUpdateView.as_view(), name='update'),
     path('delete/<int:pk>', LaptopDeleteView.as_view(), name='delete'),
-    path('',homeview,name='home')
+    path('home/',homeview,name='home')
 
 ]
